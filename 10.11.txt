@@ -1,0 +1,68 @@
+PARÂMETRO
+            // Estagiário
+            //Estagiario estagiario = new Estagiario();
+            //Console.WriteLine("Digite o valor do seu Salário: ");
+            //double salario = Convert.ToDouble(Console.ReadLine());
+
+            //estagiario.CalcularValeAlimentacao(salario);
+            //estagiario.CalcularImposto(salario);
+
+
+
+            // Gerente 
+            //Gerente gerente = new Gerente();
+            //Console.WriteLine("Digite o valor do seu Salário: ");
+            //double salarioGrnt = Convert.ToDouble(Console.ReadLine());
+
+            //gerente.CalcularValeAlimentacao(salario);
+            //gerente.CalcularImposto(salario);
+
+MÉTODOS
+
+        public class Colaborador
+    {
+        public string nome;
+        // VIRUAL ATRIBUTO PRIVADO
+        public virtual void CalcularValeAlimentacao(double salario)
+        {
+            double NovoSalario = salario * 1.25;
+
+            Console.WriteLine("O novo salário é de: " + NovoSalario);
+        }
+        public virtual void CalcularImposto(double salario)
+        {
+            double imposto = salario * 0.15;
+            double salarioLiquido = salario - imposto;
+
+            Console.WriteLine("O salário é de: " + salarioLiquido);
+        }
+    }
+
+        public class Estagiario : Colaborador
+    {
+        public override void CalcularValeAlimentacao(double salario)
+        {
+            Console.WriteLine("O valor do Vale, é de: " + salario * 1.30);
+        }
+        public override void CalcularImposto(double salario)
+        {
+            Console.WriteLine("O valor do Salário Líquido, é de: " + salario);
+        }
+    }
+
+        public class Gerente : Colaborador
+    {
+        // OVERRIDE ATRIBUTO PUBLICO 
+        public override void CalcularValeAlimentacao(double salario)
+        {
+            double vale = salario * 1.10;
+
+            Console.WriteLine("O valor do seu vale é de: " + salario);
+        }
+        public override void CalcularImposto(double salario)
+        {
+            double salarioliquido = salario - (salario * 0.25);
+            Console.WriteLine("O valor do Salário Líquido é de: " + salarioliquido);
+        }
+    }
+

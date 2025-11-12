@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -120,31 +121,31 @@ namespace AulaClasse
             //Console.Write("Digite o saldo inicial da conta: R$ ");
             //if (!double.TryParse(Console.ReadLine(), out double saldoInicial))
             //{
-                //Console.WriteLine("Valor inválido. Usando saldo inicial de R$ 0.00.");
-                //saldoInicial = 0.0;
+            //Console.WriteLine("Valor inválido. Usando saldo inicial de R$ 0.00.");
+            //saldoInicial = 0.0;
             //}
             //ContaBancaria minhaConta = new ContaBancaria(nomeTitular, saldoInicial);
             //minhaConta.ExibirInformacoes();    
             //Console.Write("Digite o valor para depósito: R$ ");
             //if (double.TryParse(Console.ReadLine(), out double valorDeposito))
-                // ***TryParse serve para converter uma String para um número,
-                // ele retorna o numero se Der Certo,
-                // e falha para não
+            // ***TryParse serve para converter uma String para um número,
+            // ele retorna o numero se Der Certo,
+            // e falha para não
             //{
-                //minhaConta.Depositar(valorDeposito);
+            //minhaConta.Depositar(valorDeposito);
             //}
             //else
             //{
-                //Console.WriteLine("Valor de depósito inválido! ");
+            //Console.WriteLine("Valor de depósito inválido! ");
             //}
             //Console.Write("Digite o valor para saque: R$ ");
             //if (double.TryParse(Console.ReadLine(), out double valorSaque))
             //{
-                //minhaConta.Sacar(valorSaque);
+            //minhaConta.Sacar(valorSaque);
             //}
             //else
             //{
-                //Console.WriteLine("Valor de saque inválido! ");
+            //Console.WriteLine("Valor de saque inválido! ");
             //}
             //minhaConta.ExibirInformacoes();
 
@@ -166,6 +167,202 @@ namespace AulaClasse
 
             //string mediaF = Aluno2.CalcularMedia(somatotal);
             //Console.WriteLine($"Status: {mediaF}");
+
+            //Pessoa pessoa = new Pessoa();
+            //pessoa.Tamanho = 1.75;
+            //pessoa.Idade = 20;
+            //pessoa.Peso = 74.7;
+            //pessoa.Nome = "Murilo Ramos";
+            //pessoa.Sexo = "Masculino";
+
+
+
+            //Pessoa_Juridica pessoa_J = new Pessoa_Juridica();
+            //pessoa_J.Email = "murilo882@gmail.com";
+            //pessoa_J.Cnpj = "55.888.333/0000-01";
+            //pessoa_J.QntFuncionarios = 600;
+            //pessoa_J.PmentoMedio = 2000;
+            //pessoa_J.Empresa = "R4";
+
+            //Pessoa_Fisica pessoa_F = new Pessoa_Fisica();
+            //pessoa_F.Cpf = "222.444.888-99";
+            //pessoa_F.Rg = "66.444.999-00";
+            //pessoa_F.Endereco = "China, 478";
+            //pessoa_F.Cidade = "Bauru";
+            //pessoa_F.Estado = "São Paulo";
+
+
+            // Estagiário
+            //Estagiario estagiario = new Estagiario();
+            //Console.WriteLine("Digite o valor do seu Salário: ");
+            //double salario = Convert.ToDouble(Console.ReadLine());
+
+            //estagiario.CalcularValeAlimentacao(salario);
+            //estagiario.CalcularImposto(salario);
+
+
+
+            // Gerente 
+            //Gerente gerente = new Gerente();
+            //Console.WriteLine("Digite o valor do seu Salário: ");
+            //double salarioGrnt = Convert.ToDouble(Console.ReadLine());
+
+            //gerente.CalcularValeAlimentacao(salario);
+            //gerente.CalcularImposto(salario);
+
+
+
+            // ATIVIDADE 01
+            //Pessoa2 pessoa2 = new Pessoa2();
+            //Console.WriteLine("Digite seu Nome: ");
+            //pessoa2.nome = Console.ReadLine();
+            //Console.WriteLine("Digite sua idade: ");
+            //pessoa2.idade = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Digite seu Cor: ");
+            //pessoa2.cor = Console.ReadLine();
+            //Console.WriteLine("Digite sua Altura: ");
+            //pessoa2.altura = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Digite seu RG: ");
+            //pessoa2.Rg = Console.ReadLine();
+            //Console.WriteLine("Digite seu Cpf: ");
+            //pessoa2.Cpf = Console.ReadLine();
+            //Console.WriteLine("Digite sua Cidade:");
+            //pessoa2.Cidade = Console.ReadLine();
+            //Console.WriteLine("Digite seu Estado: ");
+            //pessoa2.Estado = Console.ReadLine();
+
+            //pessoa2.DadosPessoa();
+
+
+
+            // ATIVIDADE 02
+            //Aluno3 al3 = new Aluno3();
+            //Console.WriteLine("Digite seu Nome: ");
+            //al3.nome = Console.ReadLine();
+            //Console.WriteLine("Digite sua idade: ");
+            //al3.idade = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Digite seu Cor: ");
+            //al3.cor = Console.ReadLine();
+            //Console.WriteLine("Digite sua Altura: ");
+            //al3.altura = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Digite seu RA: ");
+            //al3.ra = Convert.ToInt32(Console.ReadLine());
+
+            //al3.DadosAluno();
+
+
+
+            // ATIVIDADE 03
+            //Professor prof = new Professor();
+            //Console.WriteLine("Digite seu Nome: ");
+            //prof.nome = Console.ReadLine();
+            //Console.WriteLine("Digite sua idade: ");
+            //prof.idade = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Digite seu Cor: ");
+            //prof.cor = Console.ReadLine();
+            //Console.WriteLine("Digite sua Altura: ");
+            //prof.altura = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Digite seu RA: ");
+            //prof.nif = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Digite seu Cpf: ");
+            //prof.Cpf = Console.ReadLine();
+
+            //prof.DadosProfessor();
+
+
+
+            // ATIVIDADE 04
+            //Empregado empregado = new Empregado();
+            //Console.WriteLine("Digite o valor do seu salário:");
+            //double salario = Convert.ToDouble(Console.ReadLine());
+            //double novoSalario = empregado.CalcularSalario(salario);
+
+            //empregado.CalcularAlimentacao();
+
+            //empregado.nome = "Bianca";
+            //empregado.idade = 21;
+            //empregado.setor = "Comercial";
+            //empregado.Cpf = "889.004.223-12";
+            //empregado.Rg = "08.421.579-6";
+            //empregado.Departamento = "Vendas";
+
+            //Console.WriteLine("Nome: " + empregado.nome);
+            //Console.WriteLine("Idade: " + empregado.idade);
+            //Console.WriteLine("RG: " + empregado.Rg);
+            //Console.WriteLine("CPF: " + empregado.Cpf);
+            //Console.WriteLine("Setor: " + empregado.setor);
+
+
+            ////Gerente
+            //Gerente2 gerente2 = new Gerente2();
+            //gerente2.nome = "Carla";
+            //gerente2.idade = 25;
+            //gerente2.setor = "Recursos Humanos";
+            //gerente2.Cpf = "232.076.322-56";
+            //gerente2.Rg = "12.326.812-5";
+            //gerente2.Departamento = "Recursos Humanos";
+            //gerente2.Salario = 6000.00;
+            //gerente2.Area = "Recursos Humanos";
+
+            //Console.WriteLine("Nome: " + gerente2.nome);
+            //Console.WriteLine("Idade: " + gerente2.idade);
+            //Console.WriteLine("RG: " + gerente2.Rg);
+            //Console.WriteLine("CPF: " + gerente2.Cpf);
+            //Console.WriteLine("Setor: " + gerente2.setor);
+            //Console.WriteLine("Departamento: " + gerente2.Departamento);
+            //Console.WriteLine("Área: " + gerente2.Area);
+            //Console.WriteLine("Salario: " + gerente2.Salario);
+
+            //gerente2.CalcularSalario(gerente2.Salario);
+            //gerente2.CalcularAlimentacao();
+
+
+
+            // ATIVIDA 1
+            //double salarioBase = 5000.00;
+
+            //Professor2 professor2 = new Professor2();
+            //Coordenador coordenador = new Coordenador();
+            //Diretor diretor = new Diretor();
+
+            //double salarioProf = professor2.CalcularSalarioLiquidoTotal(salarioBase);
+            //double salarioCoord = coordenador.CalcularSalarioLiquidoTotal(salarioBase);
+            //double salarioDir = diretor.CalcularSalarioLiquidoTotal(salarioBase);
+
+            //Console.WriteLine($"Salário Bruto Base: {salarioBase:C2}");
+            //Console.WriteLine("----------------------------------");
+            //Console.WriteLine($"Salário Líquido Professor (INSS 18% + IRRF 2%): {salarioProf:C2}");
+            //Console.WriteLine($"Salário Líquido Coordenador (INSS 11% + IRRF 2%): {salarioCoord:C2}");
+            //Console.WriteLine($"Salário Líquido Diretor (INSS 23% + IRRF 2%): {salarioDir:C2}");
+
+
+
+            // ATIVIDADE 2
+            //Poupanca contaPoupanca = new Poupanca("0001", "12345-6", "Murilo Ramos");
+            //Corrente contaCorrente = new Corrente("0001", "65432-1", "Bianca Ferreira");
+
+            //double Saque = 7000.0;
+
+            //double valorP = contaPoupanca.CalcularImposto(Saque);
+            //Console.WriteLine($"Saque de R${Saque:C2} na Poupança (Titular: {contaPoupanca.NomeTitular})");
+            //Console.WriteLine($"Valor líquido após imposto de 6%: R${valorP:C2}\n");
+
+            //double valorC = contaCorrente.CalcularImposto(Saque);
+            //Console.WriteLine($"Saque de R${Saque:C2} na Corrente (Titular: {contaCorrente.NomeTitular})");
+            //Console.WriteLine($"Valor líquido após imposto de 15%: R${valorC:C2}");
+
+
+
+            // ATIVIDADE 3
+            Veiculo meuCarro = new Veiculo("Nissan R34", "MRS-1808");
+            meuCarro.CalcularValorCombustivel();
+            meuCarro.CalcularTotal();
+
+            Console.WriteLine("\n------------------------------------------------\n");
+
+            Moto minhaMoto = new Moto("BMW 1200", "BFL-0818");
+            minhaMoto.CalcularValorCombustivel();
+            minhaMoto.CalcularTotal();
         }
     }
 }
